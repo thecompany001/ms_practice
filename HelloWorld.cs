@@ -150,7 +150,18 @@ namespace HelloWorld
             string[] splitStr2 = x.Split('m');
 
             // Formatting
-            
+            const string x = "Dear {0}: You have been {1} to join the party on {2}. ";
+
+            const string name = "Jon";
+            const string status = "invited";
+            const string day = "Wednesday";
+
+            string y = string.Format(x, name, status, day);
+            Console.WriteLine(y);
+
+            // STILL NEED TO PRINT D to the hundredth
+            double d = 2.804;
+            Console.WriteLine(d);
 
             // Printing and parsing
 
