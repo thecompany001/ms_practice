@@ -5,10 +5,10 @@ namespace HelloWorld
 {
     class Program
     {
-/*
-// This is a single line comment
-///This comment is for XML elements and attributes, describing the code block that follows.
-*/
+        /*
+        // This is a single line comment
+        ///This comment is for XML elements and attributes, describing the code block that follows.
+        */
         static void Main(string[] args)
         {
             string firstName = "Stef";
@@ -60,8 +60,8 @@ namespace HelloWorld
             }
 
             yy = y % 3;
-            
-            if (yy == 0);
+
+            if (yy == 0) ;
             {
                 Console.WriteLine("yy is divisible by 3");
                 bool yyy = yy;
@@ -73,14 +73,14 @@ namespace HelloWorld
 
             // Type Conversion
             int x = 100, y = 200, z = 300;
-            double xx = (double) x;
-            double yy = (double) y;
-            double zz = (double) z;
+            double xx = (double)x;
+            double yy = (double)y;
+            double zz = (double)z;
 
             double a = 1.0, b = 2.0, c = 3.0;
-            int aa = (int) a;
-            int bb = (int) b;
-            int cc = (int) c;
+            int aa = (int)a;
+            int bb = (int)b;
+            int cc = (int)c;
 
             // Strings
 
@@ -120,13 +120,37 @@ namespace HelloWorld
 
 
             // Getting parts of strings
-            
+            string sub1 = str.Substring(1);
+            string sub2 = str.Substring(11);
+            string sub3 = str.Substring(1);
+            string remo1 = str.Remove(1);
+            string remo2 = str.Remove(11);
+
+            Console.WriteLine(remo1);
+            Console.WriteLine(remo2);
+
 
             // Searching
+            string ab = "Abra";
+            char cb = "cadabra";
+
+            int index1 = cb.IndexOf(ab);
+            int index2 = ab.IndexOf(cb);
+
+            bool b1 = ab.Contains(cb);
+            bool b2 = cb.Contains(ab);
+
+            string litString = @"c:\foo\bar\.txt"
+            //STILL NEED 4 from Searching
+
 
             // Splitting
+            string x = "Don't make me think";
+            string[] splitStr1 = x.Split();
+            string[] splitStr2 = x.Split('m');
 
             // Formatting
+            
 
             // Printing and parsing
 
